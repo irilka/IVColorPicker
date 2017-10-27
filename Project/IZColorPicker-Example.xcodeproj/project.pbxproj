@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07FFEE99FFEB2E16296A8474 /* Pods_IZColorPicker_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB189FA0F83447E8C8FAF8FB /* Pods_IZColorPicker_Example.framework */; };
 		8CA13EC31FA3373E00590554 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA13EC21FA3373E00590554 /* AppDelegate.swift */; };
 		8CA13EC51FA3373E00590554 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA13EC41FA3373E00590554 /* ViewController.swift */; };
 		8CA13EC81FA3373E00590554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA13EC61FA3373E00590554 /* Main.storyboard */; };
 		8CA13ECA1FA3373E00590554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CA13EC91FA3373E00590554 /* Assets.xcassets */; };
 		8CA13ECD1FA3373E00590554 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA13ECB1FA3373E00590554 /* LaunchScreen.storyboard */; };
+		8CA13ED61FA3397B00590554 /* ColorPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA13ED41FA3397A00590554 /* ColorPickerController.swift */; };
+		8CA13ED81FA3399200590554 /* ColorPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA13EDA1FA3399200590554 /* ColorPicker.storyboard */; };
+		8CA13EDC1FA33F9E00590554 /* UIView+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA13EDB1FA33F9E00590554 /* UIView+Snapshot.swift */; };
+		8CA13EDE1FA33FC500590554 /* UIView+CSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA13EDD1FA33FC500590554 /* UIView+CSS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00B0DA7D94139F04EBE25658 /* Pods-IZColorPicker-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IZColorPicker-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-IZColorPicker-Example/Pods-IZColorPicker-Example.release.xcconfig"; sourceTree = "<group>"; };
+		073964EC299E3EE1A6750C6F /* Pods-IZColorPicker-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IZColorPicker-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IZColorPicker-Example/Pods-IZColorPicker-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8CA13EBF1FA3373E00590554 /* IZColorPicker-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IZColorPicker-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA13EC21FA3373E00590554 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CA13EC41FA3373E00590554 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,11 @@
 		8CA13EC91FA3373E00590554 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CA13ECC1FA3373E00590554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CA13ECE1FA3373E00590554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CA13ED41FA3397A00590554 /* ColorPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerController.swift; sourceTree = "<group>"; };
+		8CA13ED91FA3399200590554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ColorPicker.storyboard; sourceTree = "<group>"; };
+		8CA13EDB1FA33F9E00590554 /* UIView+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Snapshot.swift"; sourceTree = SOURCE_ROOT; };
+		8CA13EDD1FA33FC500590554 /* UIView+CSS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CSS.swift"; sourceTree = SOURCE_ROOT; };
+		AB189FA0F83447E8C8FAF8FB /* Pods_IZColorPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IZColorPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07FFEE99FFEB2E16296A8474 /* Pods_IZColorPicker_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69A2427160642843B723F4DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB189FA0F83447E8C8FAF8FB /* Pods_IZColorPicker_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		780054F1345FD42D27D0BB5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				073964EC299E3EE1A6750C6F /* Pods-IZColorPicker-Example.debug.xcconfig */,
+				00B0DA7D94139F04EBE25658 /* Pods-IZColorPicker-Example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8CA13EB61FA3373E00590554 = {
 			isa = PBXGroup;
 			children = (
 				8CA13EC11FA3373E00590554 /* IZColorPicker-Example */,
 				8CA13EC01FA3373E00590554 /* Products */,
+				780054F1345FD42D27D0BB5D /* Pods */,
+				69A2427160642843B723F4DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +88,10 @@
 			children = (
 				8CA13EC21FA3373E00590554 /* AppDelegate.swift */,
 				8CA13EC41FA3373E00590554 /* ViewController.swift */,
+				8CA13EDA1FA3399200590554 /* ColorPicker.storyboard */,
+				8CA13ED41FA3397A00590554 /* ColorPickerController.swift */,
+				8CA13EDB1FA33F9E00590554 /* UIView+Snapshot.swift */,
+				8CA13EDD1FA33FC500590554 /* UIView+CSS.swift */,
 				8CA13EC61FA3373E00590554 /* Main.storyboard */,
 				8CA13EC91FA3373E00590554 /* Assets.xcassets */,
 				8CA13ECB1FA3373E00590554 /* LaunchScreen.storyboard */,
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CA13ED11FA3373E00590554 /* Build configuration list for PBXNativeTarget "IZColorPicker-Example" */;
 			buildPhases = (
+				1A64993DEBE4562004BFF971 /* [CP] Check Pods Manifest.lock */,
 				8CA13EBB1FA3373E00590554 /* Sources */,
 				8CA13EBC1FA3373E00590554 /* Frameworks */,
 				8CA13EBD1FA3373E00590554 /* Resources */,
+				39ED6602F89634DEAA511C4E /* [CP] Embed Pods Frameworks */,
+				AAAEDA61DD906640D1681ABE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,18 +164,76 @@
 			files = (
 				8CA13ECD1FA3373E00590554 /* LaunchScreen.storyboard in Resources */,
 				8CA13ECA1FA3373E00590554 /* Assets.xcassets in Resources */,
+				8CA13ED81FA3399200590554 /* ColorPicker.storyboard in Resources */,
 				8CA13EC81FA3373E00590554 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A64993DEBE4562004BFF971 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IZColorPicker-Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39ED6602F89634DEAA511C4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IZColorPicker-Example/Pods-IZColorPicker-Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IZColorPicker/IZColorPicker.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IZColorPicker.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IZColorPicker-Example/Pods-IZColorPicker-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAAEDA61DD906640D1681ABE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IZColorPicker-Example/Pods-IZColorPicker-Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8CA13EBB1FA3373E00590554 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CA13EDC1FA33F9E00590554 /* UIView+Snapshot.swift in Sources */,
+				8CA13EDE1FA33FC500590554 /* UIView+CSS.swift in Sources */,
 				8CA13EC51FA3373E00590554 /* ViewController.swift in Sources */,
+				8CA13ED61FA3397B00590554 /* ColorPickerController.swift in Sources */,
 				8CA13EC31FA3373E00590554 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,6 +255,14 @@
 				8CA13ECC1FA3373E00590554 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8CA13EDA1FA3399200590554 /* ColorPicker.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CA13ED91FA3399200590554 /* Base */,
+			);
+			name = ColorPicker.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -272,6 +377,7 @@
 		};
 		8CA13ED21FA3373E00590554 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 073964EC299E3EE1A6750C6F /* Pods-IZColorPicker-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +393,7 @@
 		};
 		8CA13ED31FA3373E00590554 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00B0DA7D94139F04EBE25658 /* Pods-IZColorPicker-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

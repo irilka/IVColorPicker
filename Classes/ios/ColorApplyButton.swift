@@ -8,18 +8,18 @@
 
 import UIKit
 
-class ColorApplyButton: UIButton
+public class ColorApplyButton: UIButton
 {
-    var borderWidth: CGFloat = 0
+    public var borderWidth: CGFloat = 0
     
-    var color: UIColor? = nil {
+    public var color: UIColor? = nil {
      
         didSet {
             setNeedsDisplay()
         }
     }
 
-    override func draw(_ rect: CGRect)
+    public override func draw(_ rect: CGRect)
     {
         super.draw(rect)
         

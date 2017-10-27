@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class ConicalGradientLayer: CALayer
+public class ConicalGradientLayer: CALayer
 {
     // MARK: - Types
     
@@ -20,7 +20,7 @@ open class ConicalGradientLayer: CALayer
     
     // MARK: - Public variables
 
-    var hsb = HSB() {
+    public var hsb = HSB() {
         
         didSet {
             setNeedsDisplay()
@@ -29,7 +29,7 @@ open class ConicalGradientLayer: CALayer
 
     // MARK: - Lifecycle
     
-    open override func draw(in ctx: CGContext)
+    public override func draw(in ctx: CGContext)
     {
         UIGraphicsPushContext(ctx)
         draw(in: ctx.boundingBoxOfClipPath)

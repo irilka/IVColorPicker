@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ColorLightingPicker: UIControl
+public class ColorLightingPicker: UIControl
 {
     //MARK: - Private constants
     
@@ -20,7 +20,7 @@ class ColorLightingPicker: UIControl
 
     //MARK: - Public variables
 
-    var selectedColor: UIColor
+    public var selectedColor: UIColor
     {
         get {
             return _color
@@ -32,8 +32,8 @@ class ColorLightingPicker: UIControl
         }
     }
     
-    var sliderWidth: CGFloat = 16
-    var thumbWidth: CGFloat = 22
+    public var sliderWidth: CGFloat = 16
+    public var thumbWidth: CGFloat = 22
 
     //MARK: - Private variables
     
@@ -96,14 +96,14 @@ class ColorLightingPicker: UIControl
         addGestureRecognizer(tap)
     }
     
-    required init?(coder aDecoder: NSCoder)
+    public required init?(coder aDecoder: NSCoder)
     {
         super.init(coder: aDecoder)
         
         addGestureRecognizer(tap)
     }
 
-    override func draw(_ rect: CGRect)
+    public override func draw(_ rect: CGRect)
     {
         super.draw(rect)
                 
@@ -117,13 +117,13 @@ class ColorLightingPicker: UIControl
 
     //MARK: - Notifications handling methods
     
-    func moveThumb(_ gesture: UIGestureRecognizer)
+    @objc func moveThumb(_ gesture: UIGestureRecognizer)
     {
         let point = gesture.location(in: contentView)
         moveColor(point: point)
     }
 
-    func moveThumbByTap(_ gesture: UIGestureRecognizer)
+    @objc func moveThumbByTap(_ gesture: UIGestureRecognizer)
     {
         let point = gesture.location(in: self)
         let x = point.x

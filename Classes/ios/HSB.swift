@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct HSB
+public struct HSB
 {
     var hue: CGFloat = 1
     var saturation: CGFloat = 1

@@ -10,7 +10,7 @@ import UIKit
 //import AEConicalGradient
 
 @IBDesignable
-class ColorPickerView: UIControl
+public class ColorPickerView: UIControl
 {
     //MARK: - Private constants
 
@@ -22,30 +22,30 @@ class ColorPickerView: UIControl
 
     //MARK: - Public variables
 
-    @IBInspectable var sliderWidth: CGFloat = 16 {
+    @IBInspectable public var sliderWidth: CGFloat = 16 {
         
         didSet {
             setNeedsDisplay()
         }
     }
     
-    @IBInspectable var thumbWidth: CGFloat = 22 {
+    @IBInspectable public var thumbWidth: CGFloat = 22 {
         
         didSet {
             setNeedsDisplay()
         }
     }
 
-    @IBInspectable var applyButtonWidth: CGFloat = 60 {
+    @IBInspectable public var applyButtonWidth: CGFloat = 60 {
         
         didSet {
             setNeedsDisplay()
         }
     }
 
-    @IBInspectable var selectedColor: UIColor = .green
+    @IBInspectable public var selectedColor: UIColor = .green
 
-    @IBInspectable var applyImage: UIImage? = nil {
+    @IBInspectable public var applyImage: UIImage? = nil {
         
         didSet {
             self.applyImageView.image = applyImage
@@ -148,14 +148,14 @@ class ColorPickerView: UIControl
         addGestureRecognizer(tap)
     }
     
-    required init?(coder aDecoder: NSCoder)
+    public required init?(coder aDecoder: NSCoder)
     {
         super.init(coder: aDecoder)
         
         addGestureRecognizer(tap)
     }
 
-    override func draw(_ rect: CGRect)
+    public override func draw(_ rect: CGRect)
     {
         super.draw(rect)
 
@@ -176,7 +176,7 @@ class ColorPickerView: UIControl
     
     //MARK: - Notifications handling methods
 
-    func moveThumb(_ gesture: UIGestureRecognizer)
+    @objc func moveThumb(_ gesture: UIGestureRecognizer)
     {
         let point = gesture.location(in: self)
         let angle = self.angle(from: gradientCenter, to: point)
@@ -187,12 +187,12 @@ class ColorPickerView: UIControl
         updateLighting()
     }
     
-    func apply(_ sender: Any)
+    @objc func apply(_ sender: Any)
     {
         sendActions(for: .valueChanged)
     }
     
-    func changeLighting(_ sender: ColorLightingPicker)
+    @objc func changeLighting(_ sender: ColorLightingPicker)
     {
         let color = sender.selectedColor
         selectedColor = color
