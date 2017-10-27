@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-IZColorPicker is a customized storyboard based `UIViewController` class that allows to select a color from HUE palette and user's color palette. HUE palette can be used as separated `UIView` class instanse.
+IZColorPicker is a customized storyboard based `UIView` class that allows to select a color from HUE palette.
 DESC
 
   s.homepage     = "https://github.com/irilka/IZColorPicker"
