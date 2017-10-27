@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "IZColorPicker"
-  s.version      = "0.0.1"
+  s.name         = "IVColorPicker"
+  s.version      = "1.0.0"
   s.summary      = "Color Picker."
 
   # This description is used to generate tags and improve search results.
@@ -25,10 +25,10 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-IZColorPicker is a customized storyboard based `UIView` class that allows to select a color from HUE palette.
+IVColorPicker is a customized storyboard based `UIView` class that allows to select a color from HUE palette.
 DESC
 
-  s.homepage     = "https://github.com/irilka/IZColorPicker"
+  s.homepage     = "https://github.com/irilka/IVColorPicker"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -81,7 +81,7 @@ DESC
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/irilka/IZColorPicker.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/irilka/IVColorPicker.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
