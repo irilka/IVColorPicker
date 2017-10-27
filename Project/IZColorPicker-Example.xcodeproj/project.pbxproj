@@ -15,8 +15,8 @@
 		8CA13ECD1FA3373E00590554 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA13ECB1FA3373E00590554 /* LaunchScreen.storyboard */; };
 		8CA13ED61FA3397B00590554 /* ColorPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA13ED41FA3397A00590554 /* ColorPickerController.swift */; };
 		8CA13ED81FA3399200590554 /* ColorPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA13EDA1FA3399200590554 /* ColorPicker.storyboard */; };
-		8CA13EDC1FA33F9E00590554 /* UIView+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA13EDB1FA33F9E00590554 /* UIView+Snapshot.swift */; };
-		8CA13EDE1FA33FC500590554 /* UIView+CSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA13EDD1FA33FC500590554 /* UIView+CSS.swift */; };
+		8CA13EE11FA347D700590554 /* UIView+CSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA13EDF1FA347D700590554 /* UIView+CSS.swift */; };
+		8CA13EE21FA347D700590554 /* UIView+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA13EE01FA347D700590554 /* UIView+Snapshot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +31,8 @@
 		8CA13ECE1FA3373E00590554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CA13ED41FA3397A00590554 /* ColorPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerController.swift; sourceTree = "<group>"; };
 		8CA13ED91FA3399200590554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ColorPicker.storyboard; sourceTree = "<group>"; };
-		8CA13EDB1FA33F9E00590554 /* UIView+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Snapshot.swift"; sourceTree = SOURCE_ROOT; };
-		8CA13EDD1FA33FC500590554 /* UIView+CSS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CSS.swift"; sourceTree = SOURCE_ROOT; };
+		8CA13EDF1FA347D700590554 /* UIView+CSS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CSS.swift"; sourceTree = "<group>"; };
+		8CA13EE01FA347D700590554 /* UIView+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Snapshot.swift"; sourceTree = "<group>"; };
 		AB189FA0F83447E8C8FAF8FB /* Pods_IZColorPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IZColorPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -90,11 +90,11 @@
 				8CA13EC41FA3373E00590554 /* ViewController.swift */,
 				8CA13EDA1FA3399200590554 /* ColorPicker.storyboard */,
 				8CA13ED41FA3397A00590554 /* ColorPickerController.swift */,
-				8CA13EDB1FA33F9E00590554 /* UIView+Snapshot.swift */,
-				8CA13EDD1FA33FC500590554 /* UIView+CSS.swift */,
 				8CA13EC61FA3373E00590554 /* Main.storyboard */,
 				8CA13EC91FA3373E00590554 /* Assets.xcassets */,
 				8CA13ECB1FA3373E00590554 /* LaunchScreen.storyboard */,
+				8CA13EDF1FA347D700590554 /* UIView+CSS.swift */,
+				8CA13EE01FA347D700590554 /* UIView+Snapshot.swift */,
 				8CA13ECE1FA3373E00590554 /* Info.plist */,
 			);
 			path = "IZColorPicker-Example";
@@ -230,10 +230,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CA13EDC1FA33F9E00590554 /* UIView+Snapshot.swift in Sources */,
-				8CA13EDE1FA33FC500590554 /* UIView+CSS.swift in Sources */,
+				8CA13EE11FA347D700590554 /* UIView+CSS.swift in Sources */,
 				8CA13EC51FA3373E00590554 /* ViewController.swift in Sources */,
 				8CA13ED61FA3397B00590554 /* ColorPickerController.swift in Sources */,
+				8CA13EE21FA347D700590554 /* UIView+Snapshot.swift in Sources */,
 				8CA13EC31FA3373E00590554 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
